@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apex Trading Academy | Forex Education</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #07111f;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: #00d4ff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #07111f,
+                #102b4e,
+                #006b8f
+            );
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 21px;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #00d4ff;
+            color: #07111f;
+        }
+
+        .secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        section > p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* COURSES */
+        .courses {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 45px;
+        }
+
+        .course {
+            background: white;
+            width: 300px;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .course h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .course p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .course .course-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 11px 20px;
+            background: #07111f;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        /* WHY US */
+        .why {
+            background: #07111f;
+            color: white;
+        }
+
+        .why p {
+            color: #ddd;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .benefit {
+            max-width: 250px;
+        }
+
+        .benefit h3 {
+            color: #00d4ff;
+            margin-bottom: 12px;
+        }
+
+        /* CONTACT */
+        .contact-button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #07111f;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #030912;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            Apex Trading Academy
+        </div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div>
+
+            <h1>
+                <h1>
+    Master The Markets.<br>
+    <span>Build Your Trading Future.</span>
+</h1>
+            </h1>
+
+            <p>
+                <p>
+    Learn Forex trading from the foundations to advanced
+    concepts through structured lessons, practical analysis
+    and disciplined risk management.
+</p>
+                
+                
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#courses" class="button primary">
+                    Start Learning
+                </a>
+
+                <a href="#contact" class="button secondary">
+                    Join Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>Freddie FX Education</h2>
+
+        <p>
+            Freddie FX is a Forex education platform focused on
+            helping students understand the financial markets
+            through structured learning, practical examples and
+            disciplined risk management.
+        </p>
+
+    </section>
+
+
+    <!-- COURSES -->
+
+    <section id="courses">
+
+    <h2>Our Trading Programs</h2>
+
+    <p>
+        Choose a learning path and develop your trading knowledge
+        step by step.
+    </p>
+
+    <div class="courses">
+
+        <div class="course">
+            <h3>Forex Foundation</h3>
+
+            <p>
+                Understand the Forex market from the ground up.
+                Learn currency pairs, pips, lots, spreads, leverage,
+                trading sessions and how orders work.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="course">
+            <h3>Technical Analysis</h3>
+
+            <p>
+                Learn how to read price charts, identify trends,
+                support and resistance, market structure and
+                important price patterns.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="course">
+            <h3>Advanced Trading</h3>
+
+            <p>
+                Develop advanced analysis skills and learn how
+                to build a structured trading approach based on
+                market conditions and confluence.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="course">
+            <h3>Risk Management</h3>
+
+            <p>
+                Learn position sizing, risk-to-reward concepts,
+                capital protection and why risk management is
+                essential for long-term trading.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="course">
+            <h3>Trading Psychology</h3>
+
+            <p>
+                Understand discipline, patience, emotional
+                control and the habits that can help traders
+                follow their trading plan.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="course">
+            <h3>Market Structure</h3>
+
+            <p>
+                Learn how to analyze market structure and
+                identify potential changes in price direction
+                using a systematic approach.
+            </p>
+
+            <a href="#contact" class="course-button">
+                Start Learning
+            </a>
+        </div>
+
+    </div>
+
+</section>
+            
+               
+
+
+    <!-- WHY US -->
+
+    <section class="why">
+
+        <h2>Why Learn With Freddie FX?</h2>
+
+        <div class="benefits">
+
+            <div class="benefit">
+
+                <h3>Structured Learning</h3>
+
+                <p>
+                    Learn step by step instead of jumping
+                    randomly between strategies.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <h3>Practical Knowledge</h3>
+
+                <p>
+                    Understand how trading concepts are
+                    applied to real market situations.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <h3>Risk Management</h3>
+
+                <p>
+                    Learn why protecting your capital is
+                    an essential part of trading.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+    <h2>Join Apex Trading Academy</h2>
+
+    <p>
+        Ready to begin your trading education?
+        Fill in the form below and we'll get in touch with you.
+    </p>
+
+    <form action="https://formsubmit.co/YOUR-EMAIL@freddiemunene10.com" method="POST"
+      style="max-width:600px; margin:40px auto 0;">
+
+        <input
+            type="text"
+            placeholder="Your Full Name"
+            required
+            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email Address"
+            required
+            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
+        >
+
+        <input
+            type="tel"
+            placeholder="Your Phone Number"
+            required
+            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
+        >
+
+        <select
+            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
+        >
+            <option>Select a Program</option>
+            <option>Forex Foundation</option>
+            <option>Technical Analysis</option>
+            <option>Advanced Trading</option>
+            <option>Risk Management</option>
+            <option>Trading Psychology</option>
+            <option>Market Structure</option>
+        </select>
+
+        <button
+            type="submit"
+            style="width:100%; padding:15px; background:#07111f; color:white; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer;"
+        >
+            Join Now
+        </button>
+
+    </form>
+
+</section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Freddie FX. All rights reserved.
+        </p>
+
+        <p>
+            Forex trading involves risk. Education does not
+            guarantee trading profits.
+        </p>
+
+    </footer>
+
+</body>
+</html>
