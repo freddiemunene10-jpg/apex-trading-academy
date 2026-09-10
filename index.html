@@ -1,564 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Apex Trading Academy | Forex Education</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-        }
-
-        /* NAVIGATION */
-        nav {
-            background: #07111f;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            color: #00d4ff;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #00d4ff;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 60px 20px;
-
-            background: linear-gradient(
-                135deg,
-                #07111f,
-                #102b4e,
-                #006b8f
-            );
-
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #00d4ff;
-        }
-
-        .hero p {
-            font-size: 21px;
-            max-width: 750px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        .hero-buttons {
-            margin-top: 35px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 8px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .primary {
-            background: #00d4ff;
-            color: #07111f;
-        }
-
-        .secondary {
-            border: 2px solid white;
-            color: white;
-        }
-
-        .button:hover {
-            opacity: 0.8;
-        }
-
-        /* GENERAL SECTIONS */
-        section {
-            padding: 80px 10%;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 38px;
-            margin-bottom: 20px;
-        }
-
-        section > p {
-            max-width: 750px;
-            margin: auto;
-            line-height: 1.7;
-            color: #555;
-        }
-
-        /* COURSES */
-        .courses {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: 45px;
-        }
-
-        .course {
-            background: white;
-            width: 300px;
-            padding: 35px 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-        }
-
-        .course h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .course p {
-            line-height: 1.6;
-            color: #666;
-        }
-
-        .course .course-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 11px 20px;
-            background: #07111f;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        /* WHY US */
-        .why {
-            background: #07111f;
-            color: white;
-        }
-
-        .why p {
-            color: #ddd;
-        }
-
-        .benefits {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .benefit {
-            max-width: 250px;
-        }
-
-        .benefit h3 {
-            color: #00d4ff;
-            margin-bottom: 12px;
-        }
-
-        /* CONTACT */
-        .contact-button {
-            display: inline-block;
-            margin-top: 30px;
-            background: #07111f;
-            color: white;
-            padding: 15px 35px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #030912;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        footer p {
-            color: #aaa;
-        }
-
-        /* MOBILE */
-        @media (max-width: 700px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Markets - Demo Trading</title>
+<style>
+*{box-sizing:border-box} :root{--bg:#070d18;--panel:#0d1626;--panel2:#111d31;--border:#20304a;--text:#f5f7fb;--muted:#8795aa;--blue:#20a8ff;--green:#16c784;--red:#ea3943;--yellow:#f5b942}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}button,input,select{font-family:inherit}button{cursor:pointer}
+.app{display:flex;min-height:100vh}.sidebar{width:230px;background:#091321;border-right:1px solid var(--border);padding:22px 15px;position:fixed;left:0;top:0;bottom:0}.logo{font-size:22px;font-weight:bold;color:var(--blue);padding:10px;margin-bottom:30px}.logo span{color:white}.nav-title{color:var(--muted);font-size:11px;text-transform:uppercase;padding:10px;letter-spacing:1px}.nav button{width:100%;border:0;background:transparent;color:#b7c2d3;padding:13px 12px;border-radius:7px;text-align:left;margin-bottom:5px;font-size:14px}.nav button:hover,.nav button.active{background:#14243a;color:white}.demo-label{position:absolute;left:15px;right:15px;bottom:20px;background:#211b0d;border:1px solid #5f4c1d;color:#f5c95c;padding:10px;border-radius:7px;font-size:11px;text-align:center}
+.main{margin-left:230px;width:calc(100% - 230px)}.topbar{height:70px;border-bottom:1px solid var(--border);background:var(--panel);display:flex;justify-content:space-between;align-items:center;padding:0 28px}.market-name{font-size:18px;font-weight:bold}.market-name small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.top-balance{text-align:right}.top-balance small{color:var(--muted);display:block}.top-balance strong{color:var(--green);font-size:18px}.content{padding:24px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:18px}.card-title{font-size:15px;font-weight:bold;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:18px}.stat-card{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:16px}.stat-card small{color:var(--muted);display:block;margin-bottom:8px}.stat-card strong{font-size:18px}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:15px}.price{border-radius:8px;padding:16px;text-align:center}.price small{display:block;color:#d0d8e4;margin-bottom:7px}.price strong{font-size:25px}.buy-price{background:#0d3024;border:1px solid #15583f}.buy-price strong{color:var(--green)}.sell-price{background:#321316;border:1px solid #652328}.sell-price strong{color:var(--red)}
+.chart{width:100%;height:440px;background:#050a12;border:1px solid var(--border);border-radius:8px;position:relative;overflow:hidden}.chart canvas{width:100%;height:100%;display:block}.chart-label{position:absolute;top:12px;left:14px;background:rgba(5,10,18,.85);padding:7px 10px;border-radius:5px;font-size:12px;color:#c5cfdd}.timeframes{display:flex;gap:6px;margin-bottom:10px}.timeframes button{background:#17243a;border:1px solid #293b58;color:#aebbd0;padding:7px 12px;border-radius:5px}.timeframes button.active,.timeframes button:hover{background:#203552;color:white;border-color:var(--blue)}
+.trade-form{display:grid;grid-template-columns:repeat(3,1fr) 1fr 1fr;gap:12px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:7px}.field input,.field select{width:100%;background:#17243a;border:1px solid #293b58;border-radius:6px;padding:12px;color:white;outline:none}.field input:focus,.field select:focus{border-color:var(--blue)}.presets{display:flex;gap:6px;margin-top:7px}.presets button{background:#17243a;border:1px solid #293b58;color:#b7c2d3;padding:5px 9px;border-radius:4px;font-size:11px}.trade-btn{border:0;border-radius:6px;color:white;font-weight:bold;font-size:15px;margin-top:20px}.buy-btn{background:var(--green)}.sell-btn{background:var(--red)}.trade-btn:hover{opacity:.85}
+.order-info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}.info-box{background:var(--panel2);border:1px solid var(--border);padding:11px;border-radius:7px}.info-box small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.info-box strong{font-size:14px}
+.position{background:var(--panel2);border:1px solid var(--border);padding:15px;border-radius:8px;margin-bottom:10px}.position-header{display:flex;justify-content:space-between;margin-bottom:10px}.position-type{font-weight:bold}.position-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;color:#c3ccda;font-size:13px}.position-grid span{display:block;color:var(--muted);margin-bottom:4px}.close-btn{margin-top:13px;background:#34445b;border:0;color:white;padding:9px 14px;border-radius:5px}.close-btn:hover{background:#455a77}
+.fund-form{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.fund-btn{border:0;border-radius:6px;color:white;font-weight:bold}.deposit{background:var(--blue)}.withdraw{background:var(--yellow);color:#111!important}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);padding:12px 8px;border-bottom:1px solid var(--border)}td{padding:12px 8px;border-bottom:1px solid #17243a}.green{color:var(--green)}.red{color:var(--red)}.empty{padding:20px;color:var(--muted);text-align:center}.reset-btn{background:#25334a;color:white;border:0;padding:11px 15px;border-radius:6px}
+.toast{position:fixed;right:22px;bottom:22px;background:#16243a;border:1px solid #2b4161;color:white;padding:13px 17px;border-radius:7px;display:none;z-index:20;box-shadow:0 8px 25px #0008}.toast.show{display:block}
+@media(max-width:1150px){.stats{grid-template-columns:repeat(3,1fr)}.trade-form{grid-template-columns:1fr 1fr}.position-grid{grid-template-columns:repeat(3,1fr)}.order-info{grid-template-columns:repeat(2,1fr)}}@media(max-width:750px){.sidebar{width:65px;padding:15px 8px}.logo{font-size:0;text-align:center}.logo:first-letter{font-size:24px}.nav-title,.nav button span,.demo-label{display:none}.nav button{text-align:center;font-size:18px}.main{margin-left:65px;width:calc(100% - 65px)}.content{padding:14px}.stats{grid-template-columns:1fr 1fr}.topbar{padding:0 15px}}@media(max-width:500px){.stats{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.trade-form{grid-template-columns:1fr}.position-grid{grid-template-columns:1fr 1fr}.order-info{grid-template-columns:1fr}.chart{height:330px}}
+</style>
 </head>
-
 <body>
-
-    <!-- NAVIGATION -->
-
-    <nav>
-
-        <div class="logo">
-            Apex Trading Academy
-        </div>
-
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#courses">Courses</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-    </nav>
-
-
-    <!-- HOME -->
-
-    <section class="hero" id="home">
-
-        <div>
-
-            <h1>
-                <h1>
-    Master The Markets.<br>
-    <span>Build Your Trading Future.</span>
-</h1>
-            </h1>
-
-            <p>
-                <p>
-    Learn Forex trading from the foundations to advanced
-    concepts through structured lessons, practical analysis
-    and disciplined risk management.
-</p>
-                
-                
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#courses" class="button primary">
-                    Start Learning
-                </a>
-
-                <a href="#contact" class="button secondary">
-                    Join Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <h2>Freddie FX Education</h2>
-
-        <p>
-            Freddie FX is a Forex education platform focused on
-            helping students understand the financial markets
-            through structured learning, practical examples and
-            disciplined risk management.
-        </p>
-
-    </section>
-
-
-    <!-- COURSES -->
-<section id="courses">
-
-    <h2>Choose Your Trading Program</h2>
-
-    <p>
-        Learn at your level and build your trading knowledge step by step.
-    </p>
-
-    <div class="courses">
-
-        <div class="course">
-            <h3>Forex Foundation</h3>
-
-            <p>
-                Learn the basics of Forex, currency pairs, pips,
-                lots, spreads, leverage and trading sessions.
-            </p>
-
-            <h3>$50</h3>
-
-            <a href="#contact" class="course-button">
-                Enroll Now
-            </a>
-        </div>
-
-
-        <div class="course">
-            <h3>Technical Analysis</h3>
-
-            <p>
-                Learn market structure, support and resistance,
-                trends, chart analysis and technical setups.
-            </p>
-
-            <h3>$100</h3>
-
-            <a href="#contact" class="course-button">
-                Enroll Now
-            </a>
-        </div>
-
-
-        <div class="course">
-            <h3>Advanced Trading</h3>
-
-            <p>
-                Develop a structured trading approach using
-                advanced analysis, confluence and strategy building.
-            </p>
-
-            <h3>$150</h3>
-
-            <a href="#contact" class="course-button">
-                Enroll Now
-            </a>
-        </div>
-
-
-        <div class="course">
-            <h3>Complete Trading Program</h3>
-
-            <p>
-                Get the complete learning path from Forex basics
-                through advanced analysis, risk management and
-                trading psychology.
-            </p>
-
-            <h3>$250</h3>
-
-            <a href="#contact" class="course-button">
-                Enroll Now
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-            
-               
-
-
-    <!-- WHY US -->
-
-    <section class="why">
-
-        <h2>Why Learn With Freddie FX?</h2>
-
-        <div class="benefits">
-
-            <div class="benefit">
-
-                <h3>Structured Learning</h3>
-
-                <p>
-                    Learn step by step instead of jumping
-                    randomly between strategies.
-                </p>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <h3>Practical Knowledge</h3>
-
-                <p>
-                    Understand how trading concepts are
-                    applied to real market situations.
-                </p>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <h3>Risk Management</h3>
-
-                <p>
-                    Learn why protecting your capital is
-                    an essential part of trading.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section id="contact">
-
-    <section id="contact">
-
-    <h2>Enroll at Apex Trading Academy</h2>
-
-    <p>
-        Choose your program and send us your details.
-        Our team will contact you with the next steps.
-    </p>
-
-    <form
-        action="https://formsubmit.co/YOUR-EMAILfreddiemunene10@.com"
-        method="POST"
-        style="max-width:600px; margin:40px auto;"
-    >
-
-        <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        >
-
-        <input
-            type="tel"
-            name="phone"
-            placeholder="WhatsApp / Phone Number"
-            required
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        >
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        >
-
-        <select
-            name="course"
-            required
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        >
-            <option value="">Choose a Program</option>
-            <option>Forex Foundation</option>
-            <option>Technical Analysis</option>
-            <option>Advanced Trading</option>
-            <option>Complete Trading Program</option>
-        </select>
-
-        <select
-            name="learning_option"
-            required
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        >
-            <option value="">Preferred Learning Option</option>
-            <option>Online Classes</option>
-            <option>Live Mentorship</option>
-            <option>Both</option>
-        </select>
-
-        <textarea
-            name="message"
-            placeholder="Tell us anything else..."
-            rows="5"
-            style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;"
-        ></textarea>
-
-        <button
-            type="submit"
-            style="width:100%; padding:15px; background:#07111f; color:white; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer;"
-        >
-            Submit Enrollment
-        </button>
-
-    </form>
-
-    <a
-        href="https://wa.me/254116628911?text=Hello%20Apex%20Trading%20Academy%2C%20I%20want%20to%20enroll."
-        target="_blank"
-        style="display:inline-block; background:#25D366; color:white; padding:15px 30px; border-radius:8px; text-decoration:none; font-weight:bold;"
-    >
-        Enroll via WhatsApp
-    </a>
-
-</section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <p>
-            © 2026 Freddie FX. All rights reserved.
-        </p>
-
-        <p>
-            Forex trading involves risk. Education does not
-            guarantee trading profits.
-        </p>
-
-    </footer>
-
+<div class="app">
+<aside class="sidebar">
+<div class="logo">A<span>PEX</span></div>
+<div class="nav-title">Trading</div>
+<div class="nav">
+<button class="active" onclick="scrollToId('dashboard')">📊 <span>Dashboard</span></button>
+<button onclick="scrollToId('market')">📈 <span>Markets</span></button>
+<button onclick="scrollToId('positionsCard')">💼 <span>Positions</span></button>
+<button onclick="scrollToId('historyCard')">📜 <span>History</span></button>
+<button onclick="scrollToId('fundsCard')">💰 <span>Account</span></button>
+</div>
+<div class="nav-title">Account</div>
+<div class="nav"><button onclick="scrollToId('settingsCard')">⚙️ <span>Settings</span></button></div>
+<div class="demo-label">DEMO ACCOUNT</div>
+</aside>
+
+<main class="main">
+<div class="topbar">
+<div class="market-name">EUR/USD <small>Euro / US Dollar • Demo Market • <span class="green">● OPEN</span></small></div>
+<div class="top-balance"><small>Account Balance</small><strong id="topBalance">$10,000.00</strong></div>
+</div>
+
+<div class="content" id="dashboard">
+<div class="stats">
+<div class="stat-card"><small>Balance</small><strong id="balanceStat">$10,000.00</strong></div>
+<div class="stat-card"><small>Equity</small><strong id="equityStat">$10,000.00</strong></div>
+<div class="stat-card"><small>Floating P/L</small><strong id="floatingStat" class="green">+$0.00</strong></div>
+<div class="stat-card"><small>Closed P/L</small><strong id="closedStat" class="green">+$0.00</strong></div>
+<div class="stat-card"><small>Free Margin</small><strong id="freeMarginStat">$10,000.00</strong></div>
+<div class="stat-card"><small>Margin Level</small><strong id="marginLevelStat">∞</strong></div>
+</div>
+
+<div class="card" id="market">
+<div class="card-title">EUR/USD Market</div>
+<div class="timeframes">
+<button class="active" onclick="setTimeframe(this,1)">1M</button>
+<button onclick="setTimeframe(this,5)">5M</button>
+<button onclick="setTimeframe(this,15)">15M</button>
+<button onclick="setTimeframe(this,60)">1H</button>
+</div>
+<div class="prices">
+<div class="price buy-price"><small>BUY / ASK</small><strong id="buyPrice">1.08500</strong></div>
+<div class="price sell-price"><small>SELL / BID</small><strong id="sellPrice">1.08490</strong></div>
+</div>
+<div class="chart"><canvas id="chart"></canvas><div class="chart-label">EUR/USD • Live Demo • <span id="chartTf">1 Minute</span></div></div>
+</div>
+
+<div class="card">
+<div class="card-title">Advanced Order Panel</div>
+<div class="trade-form">
+<div class="field"><label>Order Type</label><select id="orderType"><option>Market Order</option><option>Limit Order (Demo)</option></select></div>
+<div class="field"><label>Leverage</label><select id="leverage" onchange="updateOrderInfo()"><option value="50">1:50</option><option value="100" selected>1:100</option><option value="200">1:200</option><option value="500">1:500</option></select></div>
+<div class="field"><label>Lot Size</label><input id="lotSize" type="number" value="0.10" min="0.01" step="0.01"><div class="presets"><button onclick="setLot(.01)">0.01</button><button onclick="setLot(.10)">0.10</button><button onclick="setLot(.50)">0.50</button><button onclick="setLot(1)">1.00</button></div></div>
+<div class="field"><label>Stop Loss</label><input id="stopLoss" type="number" step="0.00001" placeholder="Optional"></div>
+<div class="field"><label>Take Profit</label><input id="takeProfit" type="number" step="0.00001" placeholder="Optional"></div>
+<button class="trade-btn buy-btn" onclick="openTrade('BUY')">BUY EUR/USD</button>
+<button class="trade-btn sell-btn" onclick="openTrade('SELL')">SELL EUR/USD</button>
+</div>
+<div class="order-info">
+<div class="info-box"><small>Spread</small><strong id="spreadInfo">1.0 pip</strong></div>
+<div class="info-box"><small>Required Margin</small><strong id="marginInfo">$108.50</strong></div>
+<div class="info-box"><small>Free Margin</small><strong id="orderFreeMargin">$10,000.00</strong></div>
+<div class="info-box"><small>Position Value</small><strong id="positionValue">$10,850.00</strong></div>
+</div>
+</div>
+
+<div class="card" id="positionsCard"><div class="card-title">Open Positions</div><div id="positions"><div class="empty">No open positions.</div></div></div>
+
+<div class="card" id="fundsCard"><div class="card-title">Demo Account Funds</div><p style="color:#8795aa;font-size:13px">These are virtual funds for testing the trading interface.</p>
+<div class="fund-form"><div class="field"><label>Amount</label><input id="fundAmount" type="number" value="1000" min="1" step="100"></div><button class="fund-btn deposit" onclick="depositFunds()">ADD DEMO FUNDS</button><button class="fund-btn withdraw" onclick="withdrawFunds()">WITHDRAW DEMO FUNDS</button></div></div>
+
+<div class="card" id="historyCard"><div class="card-title">Trade History</div><div id="tradeHistory" class="table-wrap"><div class="empty">No closed trades yet.</div></div></div>
+<div class="card"><div class="card-title">Fund Transactions</div><div id="transactions" class="table-wrap"><div class="empty">No transactions yet.</div></div></div>
+<div class="card" id="settingsCard"><div class="card-title">Demo Account</div><p style="color:#8795aa;font-size:13px">Reset the demo account to its original virtual balance.</p><button class="reset-btn" onclick="resetAccount()">Reset Demo Account</button></div>
+</div>
+</main>
+</div>
+<div id="toast" class="toast"></div>
+
+<script>
+let balance=10000, positions=[], tradeHistory=[], transactions=[], price=1.08500, candles=[], leverage=100, timeframe=1;
+
+const canvas=document.getElementById("chart"),ctx=canvas.getContext("2d");
+
+function money(n){return "$"+n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200)}
+function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"})}
+function setLot(v){document.getElementById("lotSize").value=v;updateOrderInfo()}
+function setTimeframe(btn,tf){document.querySelectorAll(".timeframes button").forEach(b=>b.classList.remove("active"));btn.classList.add("active");timeframe=tf;document.getElementById("chartTf").textContent=tf===1?"1 Minute":tf===5?"5 Minutes":tf===15?"15 Minutes":"1 Hour";drawChart()}
+
+function requiredMargin(lot){return price*lot*100000/leverage}
+function updateOrderInfo(){
+ leverage=parseInt(document.getElementById("leverage").value);
+ const lot=parseFloat(document.getElementById("lotSize").value)||0;
+ const margin=requiredMargin(lot);
+ document.getElementById("marginInfo").textContent=money(margin);
+ document.getElementById("orderFreeMargin").textContent=money(getFreeMargin());
+ document.getElementById("positionValue").textContent=money(price*lot*100000);
+}
+
+function getFloating(){return positions.reduce((s,p)=>s+calculateProfit(p),0)}
+function getUsedMargin(){return positions.reduce((s,p)=>s+requiredMargin(p.lot),0)}
+function getFreeMargin(){return balance+getFloating()-getUsedMargin()}
+
+function updateBalance(){
+ document.getElementById("balanceStat").textContent=money(balance);
+ document.getElementById("topBalance").textContent=money(balance);
+}
+function calculateProfit(p){const diff=p.type==="BUY"?price-p.entry:p.entry-price;return diff*p.lot*100000}
+
+function updateStatistics(){
+ const floating=getFloating(), closed=tradeHistory.reduce((s,t)=>s+t.profit,0), equity=balance+floating, used=getUsedMargin(), free=equity-used;
+ const wins=tradeHistory.filter(t=>t.profit>0).length;
+ document.getElementById("equityStat").textContent=money(equity);
+ const fs=document.getElementById("floatingStat");fs.textContent=(floating>=0?"+":"-")+money(Math.abs(floating)).replace("$","$");fs.className=floating>=0?"green":"red";
+ const cs=document.getElementById("closedStat");cs.textContent=(closed>=0?"+":"-")+money(Math.abs(closed)).replace("$","$");cs.className=closed>=0?"green":"red";
+ document.getElementById("freeMarginStat").textContent=money(free);
+ document.getElementById("marginLevelStat").textContent=used>0?((equity/used)*100).toFixed(1)+"%":"∞";
+ document.getElementById("orderFreeMargin").textContent=money(getFreeMargin());
+ updateOrderInfo();
+}
+
+function depositFunds(){
+ const amount=parseFloat(document.getElementById("fundAmount").value);
+ if(!amount||amount<=0)return toast("Enter a valid amount.");
+ balance+=amount;transactions.unshift({type:"DEMO DEPOSIT",amount,time:new Date().toLocaleTimeString()});
+ updateAll();toast(money(amount)+" virtual funds added.");
+}
+function withdrawFunds(){
+ const amount=parseFloat(document.getElementById("fundAmount").value);
+ if(!amount||amount<=0)return toast("Enter a valid amount.");
+ if(amount>balance)return toast("Insufficient virtual balance.");
+ balance-=amount;transactions.unshift({type:"DEMO WITHDRAWAL",amount,time:new Date().toLocaleTimeString()});
+ updateAll();toast(money(amount)+" virtual funds withdrawn.");
+}
+function updateTransactions(){
+ const area=document.getElementById("transactions");if(!transactions.length){area.innerHTML='<div class="empty">No transactions yet.</div>';return}
+ area.innerHTML="<table><tr><th>Time</th><th>Type</th><th>Amount</th></tr>"+transactions.map(t=>`<tr><td>${t.time}</td><td>${t.type}</td><td>${money(t.amount)}</td></tr>`).join("")+"</table>";
+}
+
+function openTrade(type){
+ const lot=parseFloat(document.getElementById("lotSize").value);
+ if(!lot||lot<=0)return toast("Enter a valid lot size.");
+ const margin=requiredMargin(lot);
+ if(margin>getFreeMargin())return toast("Not enough free margin for this trade.");
+ const slv=document.getElementById("stopLoss").value,tpv=document.getElementById("takeProfit").value;
+ const sl=slv===""?null:parseFloat(slv),tp=tpv===""?null:parseFloat(tpv);
+ if(type==="BUY"&&((sl!==null&&sl>=price)||(tp!==null&&tp<=price)))return toast("For BUY, SL must be below price and TP above price.");
+ if(type==="SELL"&&((sl!==null&&sl<=price)||(tp!==null&&tp>=price)))return toast("For SELL, SL must be above price and TP below price.");
+ positions.push({id:Date.now(),type,lot,entry:price,stopLoss:sl,takeProfit:tp,leverage});
+ updatePositions();updateStatistics();toast(type+" "+lot.toFixed(2)+" lot demo trade opened.");
+}
+
+function updatePositions(){
+ const area=document.getElementById("positions");
+ if(!positions.length){area.innerHTML='<div class="empty">No open positions.</div>';updateStatistics();return}
+ area.innerHTML=positions.map(p=>{
+  const profit=calculateProfit(p),cls=profit>=0?"green":"red";
+  return `<div class="position"><div class="position-header"><div class="position-type">${p.type} EUR/USD <small style="color:#8795aa">• 1:${p.leverage}</small></div><div class="${cls}">${profit>=0?"+":"-"}${money(Math.abs(profit))}</div></div>
+  <div class="position-grid">
+  <div><span>Lot</span>${p.lot.toFixed(2)}</div><div><span>Entry</span>${p.entry.toFixed(5)}</div><div><span>Current</span>${price.toFixed(5)}</div>
+  <div><span>Margin</span>${money(requiredMargin(p.lot))}</div><div><span>Stop Loss</span>${p.stopLoss===null?"Not set":p.stopLoss.toFixed(5)}</div><div><span>Take Profit</span>${p.takeProfit===null?"Not set":p.takeProfit.toFixed(5)}</div>
+  </div><button class="close-btn" onclick="closeTrade(${p.id})">Close Position</button></div>`;
+ }).join("");
+ updateStatistics();
+}
+
+function checkStops(){
+ for(let i=positions.length-1;i>=0;i--){
+  const p=positions[i];let hit=false;
+  if(p.type==="BUY"){if(p.stopLoss!==null&&price<=p.stopLoss)hit=true;if(p.takeProfit!==null&&price>=p.takeProfit)hit=true}
+  else{if(p.stopLoss!==null&&price>=p.stopLoss)hit=true;if(p.takeProfit!==null&&price<=p.takeProfit)hit=true}
+  if(hit){closeTrade(p.id,true)}
+ }
+}
+function closeTrade(id,automatic=false){
+ const i=positions.findIndex(p=>p.id===id);if(i<0)return;
+ const p=positions[i],profit=calculateProfit(p);balance+=profit;
+ tradeHistory.unshift({type:p.type,lot:p.lot,entry:p.entry,exit:price,profit,time:new Date().toLocaleTimeString()});
+ positions.splice(i,1);updateAll();toast((automatic?"SL/TP hit: ":"")+"Position closed "+(profit>=0?"+":"-")+money(Math.abs(profit)));
+}
+function updateTradeHistory(){
+ const area=document.getElementById("tradeHistory");if(!tradeHistory.length){area.innerHTML='<div class="empty">No closed trades yet.</div>';return}
+ area.innerHTML="<table><tr><th>Time</th><th>Type</th><th>Lot</th><th>Entry</th><th>Exit</th><th>P/L</th></tr>"+tradeHistory.map(t=>`<tr><td>${t.time}</td><td>${t.type}</td><td>${t.lot.toFixed(2)}</td><td>${t.entry.toFixed(5)}</td><td>${t.exit.toFixed(5)}</td><td class="${t.profit>=0?"green":"red"}">${t.profit>=0?"+":"-"}${money(Math.abs(t.profit))}</td></tr>`).join("")+"</table>";
+}
+
+function createInitialCandles(){
+ let current=1.085;
+ for(let i=0;i<70;i++){let open=current,m=(Math.random()-.5)*.003,close=open+m,high=Math.max(open,close)+Math.random()*.0015,low=Math.min(open,close)-Math.random()*.0015;candles.push({open,high,low,close});current=close}
+ price=current;
+}
+function drawChart(){
+ canvas.width=canvas.clientWidth;canvas.height=canvas.clientHeight;ctx.clearRect(0,0,canvas.width,canvas.height);if(!candles.length)return;
+ const max=Math.max(...candles.map(c=>c.high)),min=Math.min(...candles.map(c=>c.low)),range=max-min||.001;
+ const width=canvas.width/candles.length;
+ ctx.strokeStyle="#162337";ctx.lineWidth=1;
+ for(let i=1;i<6;i++){let y=canvas.height/6*i;ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke()}
+ function y(v){return canvas.height-((v-min)/range)*canvas.height}
+ candles.forEach((c,i)=>{let x=i*width+width/2,rising=c.close>=c.open;ctx.beginPath();ctx.moveTo(x,y(c.high));ctx.lineTo(x,y(c.low));ctx.strokeStyle=rising?"#16c784":"#ea3943";ctx.stroke();let top=Math.min(y(c.open),y(c.close)),h=Math.max(2,Math.abs(y(c.close)-y(c.open)));ctx.fillStyle=rising?"#16c784":"#ea3943";ctx.fillRect(x-width*.3,top,width*.6,h)});
+ const py=y(price);ctx.setLineDash([5,5]);ctx.strokeStyle="#20a8ff";ctx.beginPath();ctx.moveTo(0,py);ctx.lineTo(canvas.width,py);ctx.stroke();ctx.setLineDash([]);
+ ctx.fillStyle="#20a8ff";ctx.fillRect(canvas.width-68,py-10,68,20);ctx.fillStyle="white";ctx.font="11px Arial";ctx.fillText(price.toFixed(5),canvas.width-63,py+4);
+}
+function addCandle(){
+ const previous=candles[candles.length-1],open=previous.close,m=(Math.random()-.5)*.003,close=open+m,high=Math.max(open,close)+Math.random()*.0015,low=Math.min(open,close)-Math.random()*.0015;
+ candles.push({open,high,low,close});if(candles.length>70)candles.shift();price=close;
+ document.getElementById("buyPrice").textContent=price.toFixed(5);document.getElementById("sellPrice").textContent=(price-.0001).toFixed(5);
+ checkStops();drawChart();updatePositions();updateStatistics();
+}
+function resetAccount(){
+ if(!confirm("Reset the demo account to $10,000?"))return;
+ balance=10000;positions=[];tradeHistory=[];transactions=[];updateAll();toast("Demo account reset.");
+}
+function updateAll(){updateBalance();updatePositions();updateTradeHistory();updateTransactions();updateStatistics()}
+
+createInitialCandles();drawChart();updateAll();
+document.getElementById("buyPrice").textContent=price.toFixed(5);document.getElementById("sellPrice").textContent=(price-.0001).toFixed(5);
+setInterval(addCandle,1500);window.addEventListener("resize",drawChart);
+</script>
 </body>
 </html>
